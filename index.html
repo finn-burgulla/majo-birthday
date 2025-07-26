@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Majo! 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="confetti-canvas"></canvas>
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="rainbow-text">Happy Birthday Majo! �</h1>
+      <h2 class="subtitle">From Peru to the US! KEEP GOING!</h2>
+    </section>
+
+    <!-- About Majo Section -->
+    <section class="about-majo">
+      <h2>About Majo</h2>
+      <div class="about-content">
+        <img src="assets/llama.svg" alt="Llama" class="about-llama" />
+        <p>
+          Majo is a vibrant soul from Peru, full of dreams and kindness. She loves Peruvian culture, memes, llamas, and is going to go to college in the US! (She's going to pay my bills when I am a homeless CS grad!)
+        </p>
+      </div>
+      <div class="motifs">
+        <img src="assets/peru-motif1.svg" alt="Peruvian Motif 1" class="motif animated" />
+        <img src="assets/peru-motif2.svg" alt="Peruvian Motif 2" class="motif animated" />
+      </div>
+    </section>
+
+    <!-- Interactive Birthday Card Section -->
+    <section class="birthday-card-section">
+      <div class="birthday-card" id="birthday-card">
+        <div class="card-face card-front">
+          <div class="card-front-content">
+            <span class="star">★</span>
+            <h2>Open for a Surprise!</h2>
+            <span class="heart">💖</span>
+            <button class="open-card-btn" id="open-card-btn">Flip Card</button>
+          </div>
+        </div>
+        <div class="card-face card-back">
+          <div class="card-back-content">
+            <h2>Dear Majo,</h2>
+            <p>
+              Thank you for your friendship and your endless support.<br>
+              No matter where life takes you, remember you have a friend!<br>
+              ¡Feliz cumpleaños!<br>
+              <span class="heart">❤️</span> Always cheering for you! <span class="flag">🇵🇪</span>
+            </p>
+            <button class="close-card-btn" id="close-card-btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interactive Birthday Message Section -->
+    <section class="message-card">
+      <h2>Birthday Wishes</h2>
+      <p class="personal-message">
+        Dear Majo,<br />
+        Happy Birthday to a wonderful friend, a great musician, and an inspiration!<br />
+        May your journey to college in the US be filled with joy, adventure, and success.<br />
+        Your fighting spirit, kindness, and randomness make the world brighter.<br />
+        <span class="heart">❤️</span> ¡Te quiero mucho! <span class="flag">🇵🇪</span>
+      </p>
+      <button id="wish-btn">Click for a Surprise!</button>
+    </section>
+
+    <!-- Photo Collage/Carousel Section -->
+    <section class="photo-collage">
+      <h2>Memories & Smiles</h2>
+      <div class="collage-grid" id="collage-grid">
+        <!-- Images will be dynamically added by JS or you can add <img> tags here -->
+        <img src="assets/majo.JPG" alt="Majo Smile 1" />
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=facearea&w=300&q=80" alt="Majo Smile 2" />
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=300&q=80" alt="Majo Smile 3" />
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=300&q=80" alt="Majo Smile 4" />
+      </div>
+    </section>
+
+    <!-- Peruvian Trivia / Cultural Appreciation Section -->
+    <section class="peru-trivia">
+      <h2>Peruvian Fun Facts</h2>
+      <div class="trivia-content">
+        <p id="trivia-question">Loading trivia...</p>
+        <button id="trivia-btn">Show Me a Fun Fact!</button>
+      </div>
+    </section>
+
+    <!-- Farewell / Good Luck Note Section -->
+    <section class="farewell">
+      <h2>Good Luck, Majo!</h2>
+      <p>
+        Come to this website whenever you feel you need a boost! You have many people cheering for you! you far. The US is lucky to have you!<br />
+        ¡Tu puedes, Majo!<br />
+        <span class="heart">💖</span>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Made with <span class="heart">♥</span> by your friend Serafin| <a href="https://en.wikipedia.org/wiki/Peru" target="_blank">Peru es clave</a></p>
+    </footer>
+  </div>
+  <div id="balloon-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
